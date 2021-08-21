@@ -22,8 +22,6 @@ Domain Input : 0d2.net
 - [IP Geolocation API by IPify](https://geo.ipify.org/)
 - [LeafletJS](https://leafletjs.com/)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Learned how to use 3rd party API using fetch
