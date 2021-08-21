@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="js/app.js"></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="background__top"></div>
+      <div class="background__bottom" id="bottom"></div>
+    </div>
+
+    <div class="container">
+      <h1 class="container__headline">IP Address Tracker</h1>
+
+      <div class="container__input-box">
+        <input
+          id="input"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <span id="button_input">&#62;</span>
+      </div>
+
+      <div class="container__content">
+        <div class="container__content_ip">
+          <h4>IP Address</h4>
+          <h2 id="ip"></h2>
+        </div>
+        <div class="container__content_location">
+          <h4>Location</h4>
+          <h2 id="location"></h2>
+        </div>
+        <div class="container__content_timezone">
+          <h4>timezone</h4>
+          <h2 id="timezone"></h2>
+        </div>
+        <div class="container__content_isp">
+          <h4>isp</h4>
+          <h2 id="isp"></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Javin</a>.
+    </div>
+  </body>
+</html>
